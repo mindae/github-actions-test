@@ -1,0 +1,23 @@
+name: john doe
+age: 40
+address: "hello 123-123"
+department:
+  dept1: "one"
+  name: "abc"
+  key:
+    k1: v1
+    k2: v2
+array:
+  - a1
+  - a2
+  - { k:v, k2:v2 }
+Array2: ["a3", "a4"]
+Array3:
+  - k1: v1
+    k2: v2
+  - k3: l3
+    k4: l4
+longTest: |-
+  this is  a very logn line
+  it is split in to multiple
+  line
