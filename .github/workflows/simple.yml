@@ -1,15 +1,15 @@
-name: myworkflow
+name: shellscript workflow
 on: [push]
 jobs:
-  job1:
+  singleline-shell-cmds:
     runs-on: ubuntu-latest
     steps:
-      - name: step1 - shell cmds
-        run: echo 'step1 is executed!'
-      - name: step2 - multiline cmds
+      - name: npm-versions
+        run: npm -v
+  multiline-shell-cmds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: linux-cmds
         run: |
-          npm -v
-          date
           uname -a
-          pwd
-          ps -ef
+          date
