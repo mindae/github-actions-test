@@ -8,5 +8,5 @@ jobs:
         run: echo 'hello world!'
       - name: multiline script
         run: |
-          node -v
-          npm -v
+          date
+          uname -a
