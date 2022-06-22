@@ -1,15 +1,16 @@
-name: shellscript workflow
+name: my simple workflow
 on: [push]
 jobs:
-  singleline-shell-cmds:
+  my-first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: npm-versions
-        run: npm -v
-  multiline-shell-cmds:
-    runs-on: ubuntu-latest
-    steps:
-      - name: linux-cmds
+      - name: print name
+        run: echo 'hello'
+      - name: save in db
+        run: echo 'saving in db...'
+      - name: slack & email status
         run: |
-          uname -a
-          date
+          echo 'slacking'
+          echo 'mailing'
+      - name: checking status
+        run: echo 'all good'
