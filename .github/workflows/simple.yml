@@ -1,16 +1,16 @@
-name: my simple workflow
+name: file encode-decode workflow
 on: [push]
 jobs:
-  my-first-job:
+  hello-world:
     runs-on: ubuntu-latest
     steps:
-      - name: print name
-        run: echo 'hello'
-      - name: save in db
-        run: echo 'saving in db...'
-      - name: slack & email status
+      - name: decode file
         run: |
-          echo 'slacking'
-          echo 'mailing'
-      - name: checking status
-        run: echo 'all good'
+          echo 'start decoding file...'
+          echo 'file-content: hello world!'
+          echo 'completed decoding file!'
+      - name: send mail
+        run: |
+          echo 'fetch dest list...'
+          echo 'sending mail...'
+          echo 'mail sent!'
