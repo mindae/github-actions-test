@@ -1,16 +1,8 @@
-name: file encode-decode workflow
+name: develop work flow
 on: [push]
 jobs:
-  hello-world:
+  shell-cmds:
     runs-on: ubuntu-latest
     steps:
-      - name: decode file
-        run: |
-          echo 'start decoding file...'
-          echo 'file-content: hello world!'
-          echo 'completed decoding file!'
-      - name: send mail
-        run: |
-          echo 'fetch dest list...'
-          echo 'sending mail...'
-          echo 'mail sent!'
+      - name: first steps
+        run: echo 'hello mindae'
