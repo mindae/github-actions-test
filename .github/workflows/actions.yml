@@ -1,12 +1,12 @@
 name: my-first-action
-on: [push]
+on: push
 jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
       - name: first-step
         id: greet
-        uses: actions/hello-world-javascript-action
+        uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: Gandhiji
       - name: print
