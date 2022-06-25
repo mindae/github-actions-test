@@ -8,5 +8,6 @@ jobs:
         id: greet
         uses: actions/hello-world-javascript-action
         with:
-          who-to-greet: Gandhi
+          who-to-greet: Gandhiji
+      - name: print
         run: echo "${{ steps.greet.outputs.time}}"
