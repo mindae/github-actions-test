@@ -4,7 +4,13 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: list files
+      - name: list files before
+        run: |
+          pwd
+          ls -a
+      - name: git checkout
+        uses: actions/checkout@v3
+      - name: list files after
         run: |
           pwd
           ls -a
