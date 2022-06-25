@@ -8,7 +8,7 @@ jobs:
         uses: actions/hello-world-javascript-action@v1.1
         id: greet
         with:
-          who-to-greet: mindae!!!!
+          who-to-greet: mindae-mindae
         # run: echo 'hello world!!!!'
       - name: log greeting time
         run: echo "${{steps.greet.outputs.time}}"
