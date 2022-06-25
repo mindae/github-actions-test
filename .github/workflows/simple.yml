@@ -1,4 +1,4 @@
-name: develop work flow
+name: simple dev work flow
 on: [push]
 jobs:
   shell-cmds:
