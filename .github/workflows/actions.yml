@@ -4,6 +4,10 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
+      - name: list files
+        run: |
+          pwd
+          ls -a
       - name: first-step
         id: greet
         uses: actions/hello-world-javascript-action@v1
