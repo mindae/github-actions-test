@@ -7,13 +7,13 @@ jobs:
       - name: list files before
         run: |
           pwd
-          ls -a
+          ls -lrta
       - name: git checkout
         uses: actions/checkout@v3
       - name: list files after
         run: |
           pwd
-          ls -a
+          ls -lrta
       - name: first-step
         id: greet
         uses: actions/hello-world-javascript-action@v1
