@@ -1,0 +1,14 @@
+name: my first action wf
+on: push
+jobs:
+  my-action-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: helloworld javascript action
+        uses: actions/hello-world-javascript-action@v1.1
+        with:
+          who-to-greet: mindae
+          id: greet
+        # run: echo 'hello world!'
+      - name: log greeting time
+        run: echo ${{steps.greet.outputs.time}}
