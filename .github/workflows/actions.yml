@@ -11,4 +11,4 @@ jobs:
           who-to-greet: mindae
         # run: echo 'hello world!'
       - name: log greeting time
-        run: echo ${{steps.greet.outputs.time}}
+        run: echo "${{steps.greet.outputs.time}}"
